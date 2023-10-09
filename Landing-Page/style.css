@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Inclusive+Sans&family=Montserrat:wght@300&family=Poppins:wght@200;300;400&family=Roboto:wght@300&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    display: flex;
+    width: 80%;
+    margin: auto;
+    height: 10vh;
+    align-items: center;
+    color: #5f5f79;
+}
+
+.logo-container,
+.nav-links,
+.cart {
+    display: flex;
+}
+
+.logo-container {
+    flex: 1;
+}
+
+.logo {
+    font-weight: 500;
+    margin: 0 0 0 10px;
+}
+
+nav {
+    flex: 2;
+}
+
+.nav-links {
+    justify-content: space-around;
+    list-style-type: none;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #5f5f79;
+}
+
+.nav-link:hover {
+    color: #000;
+}
+
+.cart {
+    flex: 1;
+    cursor: pointer;
+    justify-content: flex-end;
+}
+
+.main {
+    display: flex;
+    width: 80%;
+    margin: auto;
+    min-height: 80vh;
+    align-items: center;
+}
+
+.cover img {
+    height: 70vh;
+    position: relative;
+    left: 25%;
+    filter: drop-shadow(0px 3px 5px black);
+    animation: drop 1.5s ease;
+}
+
+.introduction {
+    flex: 1;
+    animation: drop 1.5s ease;
+}
+
+.intro-text h1{
+    font-size: 44px;
+    font-weight: 500;
+    background: linear-gradient(to right, #494964, #6f6f89);
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.intro-text p {
+    font-size: 22px;
+    margin-top: 5px;
+    color: #585772;
+}
+
+.cta {
+    margin: 50px 0 0 0;
+}
+
+.cta-select {
+    border: 2px solid #00dc07;
+    background: transparent;
+    color: #00dc07;
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+    border-radius: 12px;
+    font-size: 22px;
+    transition: all ease-in-out 0.3s;
+}
+
+.cta-select:hover {
+    background-color: #00dc07;
+    color: #494964;
+}
+
+.cta-add {
+    background-color: #00dc07;
+    border: none;
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+    border-radius: 12px;
+    font-size: 22px;
+    margin: 0 0 0 25px;
+    transition: all ease-in-out 0.3s;
+}
+
+.cta-add:hover {
+    background-color: #494964;
+    color: #00dc07;
+}
+
+.cover {
+    flex: 1;
+    margin: 0 0 0 189px;
+}
+
+.big-eclipse {
+    position: absolute;
+    top: 0;
+    right: 0;
+    opacity: 1;
+    z-index: -1;
+    height: 85%;
+}
+
+.mid-eclipse {
+    position: absolute;
+    top: 30%;
+    right: 30%;
+    z-index: -1;
+    opacity: 0.8;
+    height: 70%;
+}
+
+.small-eclipse {
+    position: absolute;
+    bottom: 0;
+    left: 20%;
+    z-index: -1;
+    opacity: 0.7;
+    height: 50%;
+}
+
+.select {
+    display: flex;
+    width: 10%;
+    justify-content: space-around;
+    position: absolute;
+    right: 20%;
+    cursor: pointer;
+}
+
+@keyframes drop {
+    0% {
+        opacity: 0;
+        transform: translateY(-90px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    /* Header */
+    header {
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .logo {
+        font-size: 14px;
+    }
+    .nav-link {
+        font-size: 12px;
+        margin-left: 25px;
+    }
+
+    /* Main */
+    .main {
+        display: flex;
+        flex-direction: column;
+    }
+    .introduction {
+        margin-top: 5vh;
+        text-align: center;
+    }
+    .intro-text h1 {
+        font-size: 28px;
+    }
+    .intro-text p {
+        font-size: 18px;
+    }
+    .cta {
+        padding: 10px 0 0 0;
+    }
+    .cta button {
+        width: 120px;
+        height: 40px;
+    }
+    .cover {
+        margin: 50px 120px 0 0;
+    }
+    .cover img {
+        height: 50vh;
+    }
+    .select {
+        width: 1.5%;
+        left: 50%;
+        margin-top: 25px;
+    }
+}
