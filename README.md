@@ -1,4 +1,4 @@
-# CodSoft Landing Page
+# CodSoft - Virtual Intership | Landing Page
 
 This repository contains the code for a landing page created during a virtual internship at CodSoft. The landing page is designed for a product called "Samsung Galaxy Z Fold."
 
@@ -11,7 +11,7 @@ This repository contains the code for a landing page created during a virtual in
 ## Project Description
 This landing page is built using HTML and CSS to showcase the Samsung Galaxy Z Fold, a cutting-edge smartphone. The page includes a header with navigation, an introduction section with a call to action, and some stylish design elements.
 
-![Landing Page](/assets/screenshot.png)
+![Landing Page](assets/screenshot.png)
 
 ## Usage
 To view the landing page, you can simply open the `index.html` file in a web browser. If you want to make changes or customize it, you can modify the HTML and CSS files as needed.
